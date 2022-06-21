@@ -53,13 +53,13 @@
   <div class="register">
   <form action="http://localhost:3001/">
     <div class="name">
-      <input type="text" name="name" placeholder="Nombre y apellido" >
+      <input type="text" minlength="4" maxlength="16" name="name" placeholder="Nombre y apellido" required >
     </div>
     <div class="user">
-      <input type="text" name="user" placeholder="Nombre de usuario" >
+      <input type="text" minlength="3" maxlength="16" name="user" placeholder="Nombre de usuario" required>
     </div>
     <div class="email">
-      <input type="email" name="email" placeholder="E-mail" >
+      <input type="email" name="email" placeholder="E-mail" required>
     </div>
       <div class="birth">
       <h4>Fecha de nacimiento</h4>
@@ -100,10 +100,10 @@
       <input class="sele" type="file" name="photo">
     </div>
     <div class="password-user">
-      <input type="password" name="passwordUser" placeholder="Ingrese una Contraseña" >
+      <input type="password" minlength="4" maxlength="8" name="passwordUser" placeholder="Ingrese una Contraseña" required>
     </div>
     <div class="password-confirm">
-      <input type="password" name="passwordconfirm" placeholder="Confirmar Contraseña" >
+      <input type="password" minlength="4" maxlength="8" name="passwordconfirm" placeholder="Confirmar Contraseña" required>
     </div>
       <button class="send" type="submit">Enviar</button>
     <button class="reset" type="reset">Borrar</button>

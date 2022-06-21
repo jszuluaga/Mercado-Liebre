@@ -56,10 +56,10 @@
   <div class="login">
   <form action="http://localhost:3001/">
     <div class="user-login">
-      <input class="login-user" type="email" name="user-login" placeholder="Nombre de usuario" >
+      <input class="login-user" type="email" name="user-login" placeholder="Nombre de usuario" required>
     </div>
     <div class="password-login">
-      <input class="login-user" type="password" name="password-login" placeholder="Contraseña" >
+      <input class="login-user" type="password" minlength="4" maxlength="8" name="password-login" placeholder="Contraseña" required >
     </div>
     <button class="send-login" type="submit">Enviar</button>
   </form>
